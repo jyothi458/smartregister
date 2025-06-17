@@ -4,13 +4,8 @@ from ﬂask import Flask, render_template
 app = Flask(  name  )
 
 @app.route('/') def index():
+def home():
+   return render_template('index.html')
 
-"""
-
-Renders the main index.html template for the Smart Register application. """
-
-return render_template('index.html')
-
-if   name	== '  main  ':
-
-# Run the Flask application in debug mode for development app.run(debug=True)
+if   name	== '_main_':
+    app.run(debug=True)
